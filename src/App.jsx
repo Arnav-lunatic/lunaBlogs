@@ -1,4 +1,4 @@
-import { RiMessage3Fill } from "react-icons/ri";
+import { Analytics } from "@vercel/analytics/react"
 import { Footer } from './components/Footer'
 import BlogsPage from './components/BlogsPage'
 import Nav from './components/Nav'
@@ -16,6 +16,7 @@ function App() {
       </div> */}
       <BlogsPage />
       <Footer />
+      <Analytics/>
     </div>
   )
 }
