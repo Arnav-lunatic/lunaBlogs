@@ -3,6 +3,7 @@ import React from "react";
 import { SiDarkreader } from "react-icons/si";
 import { IoLogoReact } from "react-icons/io5";
 import { TbBrandJavascript } from "react-icons/tb";
+import { GoCodeReview } from "react-icons/go";
 
 function BlogsPage() {
 	const blogArr = [
@@ -33,7 +34,14 @@ function BlogsPage() {
 			description:
                 "Dive into the world of JavaScript Promises! This blog breaks down how Promises work, making asynchronous programming easier to manage. Learn how to handle async operations, avoid callback hell, and write cleaner, more efficient code.",	
             link: "https://arnav404.notion.site/Promises-101671219a298051a1d8e1b3b13e7e5a"
-		},		
+		},
+		{
+			icon: <GoCodeReview className="w-20 h-24 text-black" />,
+			title: "'new' keyword in C++ and JS",
+			description:
+                "This blog breaks down how the new keyword functions differently in C++ and JavaScript",	
+            link: "https://arnav404.notion.site/new-keyword-in-C-and-JS-12f671219a2980658563dd6a7c6f219b"
+		},
 	];
 
 	return (
