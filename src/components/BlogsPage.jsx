@@ -8,6 +8,14 @@ import { GoCodeReview } from "react-icons/go";
 function BlogsPage() {
 	const blogArr = [
 		{
+			icon: <GoCodeReview className="w-20 h-24 text-black" />,
+			title: "'new' keyword in C++ and JS",
+			description:
+                "This blog breaks down how the new keyword functions differently in C++ and JavaScript",	
+			link: "https://arnav404.notion.site/new-keyword-in-C-and-JS-12f671219a2980658563dd6a7c6f219b",
+			date: "30/10/24"
+		},
+		{
 			icon: <SiDarkreader className="w-20 h-24 text-black" />,
 			title: "Theme Switcher",
 			description:
@@ -35,25 +43,20 @@ function BlogsPage() {
                 "Dive into the world of JavaScript Promises! This blog breaks down how Promises work, making asynchronous programming easier to manage. Learn how to handle async operations, avoid callback hell, and write cleaner, more efficient code.",	
             link: "https://arnav404.notion.site/Promises-101671219a298051a1d8e1b3b13e7e5a"
 		},
-		{
-			icon: <GoCodeReview className="w-20 h-24 text-black" />,
-			title: "'new' keyword in C++ and JS",
-			description:
-                "This blog breaks down how the new keyword functions differently in C++ and JavaScript",	
-            link: "https://arnav404.notion.site/new-keyword-in-C-and-JS-12f671219a2980658563dd6a7c6f219b"
-		},
+		
 	];
 
 	return (
 		<div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 w-full max-w-[1300px] m-auto">
 			{blogArr.map((eachBlog, index) => {
 				return (
-                    <BlogCard
-                        key={index}
-                        icon={eachBlog.icon}
-                        title={eachBlog.title}
-                        description={eachBlog.description}
-                        link={eachBlog.link}
+					<BlogCard
+						key={index}
+						icon={eachBlog.icon}
+						title={eachBlog.title}
+						description={eachBlog.description}
+						link={eachBlog.link}
+						date={eachBlog.date}
 					/>
 				);
 			})}

@@ -7,9 +7,9 @@ import {
 } from "@material-tailwind/react";
 
 
-export function BlogCard({icon, title, description='Not available' , link='#'}) {
+export function BlogCard({icon, title, description='Not available' , link='#', date=''}) {
 	return (
-		<Card className="mt-6 w-96 m-auto h-96 bg-gray-100">
+		<Card className="relative mt-6 w-96 m-auto h-96 bg-gray-100">
 			<CardBody>
 				{icon}
 				<Typography variant="h5" color="blue-gray" className="mb-2">
@@ -44,6 +44,8 @@ export function BlogCard({icon, title, description='Not available' , link='#'}) 
 					</Button>
 				</a>
 			</CardFooter>
+
+			<div className="absolute bottom-2 right-2 text-sm opacity-70">{ date }</div>
 		</Card>
 	);
 }

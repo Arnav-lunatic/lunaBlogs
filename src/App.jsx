@@ -1,12 +1,12 @@
-import { Analytics } from "@vercel/analytics/react"
 import { Footer } from './components/Footer'
 import BlogsPage from './components/BlogsPage'
 import Nav from './components/Nav'
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
 
   return (
-    <div className='w-full pt-24'>
+    <div className='w-full pt-28 lg:pt-20'>
       <Nav />
       {/* <div className="flex items-start w-full max-w-[600px] m-auto">
         <RiMessage3Fill className="w-40 h-20" />
