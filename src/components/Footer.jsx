@@ -13,7 +13,8 @@ export function Footer() {
 					<li>
 						<Typography
 							as="a"
-							href="#"
+							href="https://discoverarnav.vercel.app"
+							target="_blank"
 							color="blue-gray"
 							className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
 						>
@@ -23,7 +24,8 @@ export function Footer() {
 					<li>
 						<Typography
 							as="a"
-							href="#"
+							href="https://github.com/Arnav-lunatic"
+							target="_blank"
 							color="blue-gray"
 							className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
 						>
@@ -33,21 +35,12 @@ export function Footer() {
 					<li>
 						<Typography
 							as="a"
-							href="#"
+							href="https://www.linkedin.com/in/arnav-singh-1360642b9/"
+							target="_blank"
 							color="blue-gray"
 							className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
 						>
-							Contribute
-						</Typography>
-					</li>
-					<li>
-						<Typography
-							as="a"
-							href="#"
-							color="blue-gray"
-							className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
-						>
-							Contact Me
+							linkedIn
 						</Typography>
 					</li>
 				</ul>
